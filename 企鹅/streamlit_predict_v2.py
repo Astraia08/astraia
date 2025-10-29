@@ -8,7 +8,7 @@ st.set_page_config(
     layout='wide',
     )
 with st.sidebar:
-    st.image('images/rigth_logo.png',width=100)
+    st.image('/images/rigth_logo.png',width=100)
     st.title('请选择页面')
     page = st.selectbox("请选择页面",["简介页面","预测分类页面"], label_visibility='collapsed')
 
@@ -63,3 +63,4 @@ with col_logo:
         st.image('images/rigth_logo.png',width=300)
     else:
         st.image(f'images/{predict_result_species}.png',width=300)
+
